@@ -1,0 +1,67 @@
+{
+  "tasks": [
+    {
+      "id": "a1f7c9de-3b12-4c8e-9bba-001a9e11aa01",
+      "title": "Design Homepage UI",
+      "status": "Completed",
+      "date": "2025-01-05",
+      "description": "Create wireframes and mockups"
+    },
+    {
+      "id": "b2e8d2ab-4c56-4f34-8021-002b9e22bb02",
+      "title": "Fix Login Bug",
+      "status": "Completed",
+      "date": "2025-01-06",
+      "description": "Resolve incorrect password validation"
+    },
+    {
+      "id": "c3f9e3bc-5d67-4a45-9232-003c9e33cc03",
+      "title": "Database Backup",
+      "status": "Completed",
+      "date": "2025-01-07",
+      "description": "Backup production database"
+    },
+    {
+      "id": "d4a1f4cd-6e78-4b56-a543-004d9e44dd04",
+      "title": "Email Notification Setup",
+      "status": "Pending",
+      "date": "2025-01-08",
+      "description": "Configure SMTP and templates"
+    },
+    {
+      "id": "e5b2a5de-7f89-4c67-b654-005e9e55ee05",
+      "title": "Profile Page Update",
+      "status": "Completed",
+      "date": "2025-01-09",
+      "description": "Improve UI and fix alignment issues"
+    },
+    {
+      "id": "f6c3b6ef-8a90-4d78-c765-006f9e66ff06",
+      "title": "API Testing",
+      "status": "Pending",
+      "date": "2025-01-10",
+      "description": "Test all updated endpoints"
+    },
+    {
+      "id": "a7d4c701-9b01-4e89-d876-007a9e77aa07",
+      "title": "Security Patch Review",
+      "status": "Pending",
+      "date": "2025-01-11",
+      "description": "Check vulnerabilities and apply fixes"
+    },
+    {
+      "id": "b8e5d812-ac12-4f9a-e987-008b9e88bb08",
+      "title": "Dashboard Redesign",
+      "status": "Completed",
+      "date": "2025-01-12",
+      "description": "Update components and colors"
+    },
+    {
+      "id": "b62867a4-7ff9-4965-a91f-b1f26d93f443",
+      "title": "Download Features",
+      "description": "Implement downloading feature via .jpg, .pdf, .csv, .exe formats",
+      "date": "2025-12-04",
+      "status": "Completed"
+    }
+  ]
+}

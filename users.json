@@ -1,0 +1,92 @@
+{
+  "users": [
+    {
+      "id": "1caa1d4c-af5a-421b-a660-adaea9960d71",
+      "firstName": "Bhanu Prakash",
+      "lastName": "Tirupati",
+      "email": "bhanu@gmail.com",
+      "mobile": "9876543210",
+      "password": "demo@123"
+    },
+    {
+      "id": "2caa1d4c-af5a-421b-a660-adaea9960d72",
+      "firstName": "John",
+      "lastName": "Doe",
+      "email": "john@gmail.com",
+      "mobile": "9876543211",
+      "password": "john@123"
+    },
+    {
+      "id": "3caa1d4c-af5a-421b-a660-adaea9960d73",
+      "firstName": "Steve",
+      "lastName": "Bob",
+      "email": "steve@gmail.com",
+      "mobile": "8123456709",
+      "password": "steve@123"
+    },
+    {
+      "id": "01d4669b-32f6-425d-9224-d5a5b8950699",
+      "firstName": "NANDIMANDALAM",
+      "lastName": "ANKAL",
+      "email": "ankal@gmail.com",
+      "mobile": "6789054321",
+      "password": "ankal@123"
+    },
+    {
+      "id": "1b365daf-b089-43a4-bcb0-cd52f05bbcde",
+      "firstName": "Rudhra",
+      "lastName": "Varanasi",
+      "email": "rudhra@gmail.com",
+      "mobile": "8765432102",
+      "password": "rudhra@1234"
+    },
+    {
+      "id": "0428df61-2379-4019-878e-a81fad1477bf",
+      "firstName": "Guna",
+      "lastName": "Sekhar",
+      "email": "guna@gmail.com",
+      "mobile": "6543217888",
+      "password": "guna@123"
+    },
+    {
+      "id": "4ebc919f-0c75-4a24-9ec8-5e0fac644352",
+      "firstName": "Raju",
+      "lastName": "Raju",
+      "email": "raju@gmail.com",
+      "mobile": "76589054321",
+      "password": "raju@123"
+    },
+    {
+      "id": "5fbc919e-0c75-4a24-9ec8-5h0eac644373",
+      "firstName": "Demo User",
+      "lastName": "Demo Last",
+      "email": "demo@gmail.com",
+      "mobile": "8312456709",
+      "password": "demo@123"
+    },
+    {
+      "id": "5caa1d4t-ff5a-424b-a660-adaea9970d71",
+      "firstName": "Admin1",
+      "lastName": "1",
+      "email": "admin1@gmail.com",
+      "mobile": "8976543210",
+      "password": "admin1@123"
+    },
+    {
+      "id": "5caa1d3t-ff5s-424b-a560-acaea9970d71",
+      "firstName": "Admin2",
+      "lastName": "2",
+      "email": "admin2@gmail.com",
+      "mobile": "8976542310",
+      "password": "admin2@123"
+    },
+    {
+      "id": "3e6f9f35-1635-4001-a2db-9b7966a88944",
+      "firstName": "Admin3",
+      "lastName": "3",
+      "email": "admin3@gmail.com",
+      "mobile": "6823609564",
+      "password": "admin3@123"
+    }
+  ]
+}
