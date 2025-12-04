@@ -111,7 +111,7 @@ const Navbar = () => {
               className={`font-semibold cursor-pointer py-1 px-2 my-1 rounded-md
           ${
             theme === "light"
-              ? "text-black bg-red-500  hover:bg-red-600 shadow"
+              ? "text-white bg-red-500  hover:bg-red-600 shadow"
               : "text-red-400 hover:text-red-300 bg-gray-700 shadow"
           }
         `}

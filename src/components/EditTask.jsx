@@ -40,7 +40,7 @@ const EditTask = ({ closeModal, taskData, onTaskUpdated }) => {
 
         <form onSubmit={handleSubmit} className="space-y-3">
           {/* Title */}
-          <div>
+          <div className="text-left">
             <label className="block text-sm font-medium">Title</label>
             <input
               type="text"
@@ -57,7 +57,7 @@ const EditTask = ({ closeModal, taskData, onTaskUpdated }) => {
           </div>
 
           {/* Description */}
-          <div>
+          <div className="text-left">
             <label className="block text-sm font-medium">Description</label>
             <textarea
               name="description"
@@ -73,7 +73,7 @@ const EditTask = ({ closeModal, taskData, onTaskUpdated }) => {
           </div>
 
           {/* Status */}
-          <div>
+          <div className="text-left">
             <label className="block text-sm font-medium">Status</label>
             <select
               name="status"

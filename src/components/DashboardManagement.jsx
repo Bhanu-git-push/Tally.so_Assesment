@@ -169,7 +169,7 @@ const DashboardManagement = () => {
                 }`}
               >
                 {/* Accordion Button */}
-                <div
+                {/* <div
                   role="button"
                   onClick={() => toggleAccordion(task.id)}
                   className={`w-full flex justify-between items-center p-2.5 rounded-md transition-all duration-300 cursor-pointer ${
@@ -204,10 +204,10 @@ const DashboardManagement = () => {
                   >
                     {task.status}
                   </span>
-                </div>
+                </div> */}
 
                 {/* Accordion Content */}
-                <div
+                {/* <div
                   className={`transition-all duration-300 overflow-hidden text-left ${
                     openAccordionId === task.id
                       ? "max-h-[500px] opacity-100 scale-y-100 p-3"
@@ -231,7 +231,7 @@ const DashboardManagement = () => {
                     <label className="block text-sm font-medium mb-1">
                       Dead-line:{" "}
                       <span className="text-sm font-semibold">
-                        {deadlineDate || "N/A"} (14 days after creation)
+                        {deadlineDate || "N/A"} (14 days after the date of creation)
                       </span>
                     </label>
 
@@ -277,7 +277,129 @@ const DashboardManagement = () => {
                       </div>
                     </div>
                   </div>
-                </div>
+                </div> */}
+                {/* Accordion Button */}
+<div
+  role="button"
+  onClick={() => toggleAccordion(task.id)}
+  className={`w-full flex flex-col sm:flex-row gap-2 sm:gap-0 justify-between items-start sm:items-center p-2.5 rounded-md transition-all duration-300 cursor-pointer 
+    ${theme === "light"
+      ? "bg-[#f0dde1] text-black hover:bg-[#e2c7ce]"
+      : "bg-gray-500 text-white hover:bg-gray-600"
+    }`}
+>
+  <div className="flex flex-col text-left leading-tight">
+    <div className="flex gap-2 items-center">
+      <h4 className="text-xs sm:text-sm font-medium">{displayIndex}.</h4>
+      <h4 className="text-xs sm:text-sm md:text-base font-semibold">{task.title}</h4>
+    </div>
+    <p
+      className={`text-[10px] sm:text-xs ${
+        theme === "light" ? "text-gray-900" : "text-gray-300"
+      }`}
+    >
+      Created on: {task.date}
+    </p>
+  </div>
+
+  {/* Status */}
+  <span
+    className={`text-[10px] sm:text-xs md:text-sm font-medium px-2 py-1 rounded min-w-[80px] sm:min-w-[100px] text-center
+      ${
+        theme === "light"
+          ? task.status.toLowerCase() === "completed"
+            ? "bg-green-100 text-green-700"
+            : "bg-yellow-100 text-yellow-700"
+          : task.status.toLowerCase() === "completed"
+          ? "bg-green-100 text-green-700"
+          : "bg-yellow-100 text-yellow-700"
+      }`}
+  >
+    {task.status}
+  </span>
+</div>
+
+{/* Accordion Content */}
+<div
+  className={`transition-all duration-300 overflow-hidden text-left ${
+    openAccordionId === task.id
+      ? "max-h-[500px] opacity-100 scale-y-100 p-3"
+      : "max-h-0 opacity-0 scale-y-95 p-0"
+  }`}
+>
+  <label className="block text-xs sm:text-sm font-medium mb-1">
+    Description:
+  </label>
+
+  {/* Textarea */}
+  <textarea
+    readOnly
+    value={task.description}
+    className={`w-full h-16 border rounded p-2 text-xs sm:text-sm 
+      ${
+        theme === "light"
+          ? "bg-white text-black border-gray-300"
+          : "bg-gray-800 text-white border-gray-600"
+      }`}
+  />
+
+  {/* Row: Deadline + Buttons */}
+  <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between mt-3 gap-3 sm:gap-0">
+    <label className="block text-xs sm:text-sm font-medium">
+      <span className="text-red-500">Dead-line:</span>{" "}
+      <span className="text-xs sm:text-sm font-semibold">
+        {deadlineDate || "N/A"} (14 days after the date of creation)
+      </span>
+    </label>
+
+    {/* Buttons */}
+    <div className="flex gap-2 w-full sm:w-auto justify-end">
+      {/* Edit Button */}
+      <div
+        role="button"
+        onClick={() => handleEditTask(task)}
+        className="w-full sm:w-[90px] text-center bg-yellow-500 text-white text-xs sm:text-sm rounded py-1 hover:bg-yellow-600"
+      >
+        Edit
+      </div>
+
+      {/* Delete Button */}
+      <div
+        role="button"
+        onClick={() => {
+          if (
+            user &&
+            (user.firstName === "Admin1" ||
+              user.firstName === "Admin2" ||
+              user.firstName === "Admin3")
+          ) {
+            handleDeleteTask(task.id);
+          }
+        }}
+        className={`w-full sm:w-[90px] text-center text-xs sm:text-sm rounded py-1 transition-colors duration-300 
+          ${
+            user &&
+            (user.firstName === "Admin1" ||
+              user.firstName === "Admin2" ||
+              user.firstName === "Admin3")
+              ? `${
+                  theme === "light"
+                    ? "bg-red-500 text-white hover:bg-red-600"
+                    : "bg-red-600 text-white hover:bg-red-700"
+                } cursor-pointer`
+              : `${
+                  theme === "light"
+                    ? "bg-gray-200 text-gray-400"
+                    : "bg-gray-700 text-gray-500"
+                } cursor-not-allowed`
+          }`}
+      >
+        Delete
+      </div>
+    </div>
+  </div>
+</div>
+
               </div>
             );
           })}
